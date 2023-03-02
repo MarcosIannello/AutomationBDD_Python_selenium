@@ -1,0 +1,16 @@
+reports/
+venv
+geckodriver.log
+.idea
+runner.py
+txt
+/configuration
+/drivers
+*/__pycache__/*.pyc
+bin/
+include/
+lib/
+pyvenv.cfg
+man/
+
+
