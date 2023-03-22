@@ -1,7 +1,7 @@
 Feature: Asociar Agrupaciones Servicios a Perfiles
 
   Background:
-    Given Iniciando Navegador "turnera-frontend-administracion-app-turnera-pre-qa.apps.ocp4-dev.gcba.gob.ar/login"
+    Given Iniciando Navegador "https://baturnos-backoffice-preqa.gcba.gob.ar/"
 
   Scenario Outline: Asociar Agrupaciones Servicios a Perfiles
     When Escribiendo campo CUIT "<cuit>"

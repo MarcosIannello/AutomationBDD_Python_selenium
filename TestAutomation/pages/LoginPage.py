@@ -24,7 +24,6 @@ class LoginPage(Funciones):
         super().__init__(driver)
 
     def OpenBrowser(self):
-
         global navegador, fun , reporte
         navegador = Funciones_driver
         # navegador.driver_Firefox(self, "C:\drivers\geckodriver.exe")

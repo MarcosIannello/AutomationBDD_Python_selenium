@@ -1,7 +1,7 @@
 Feature: Edicion de organismo automatizada
 
   Background:
-    Given Iniciando Navegador "turnera-frontend-administracion-app-turnera-pre-qa.apps.ocp4-dev.gcba.gob.ar/login"
+    Given Iniciando Navegador "https://baturnos-backoffice-preqa.gcba.gob.ar/"
 
   Scenario Outline: Edicion Organismo
     When Escribiendo campo CUIT "<cuit>"

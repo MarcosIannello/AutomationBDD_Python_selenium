@@ -2,7 +2,7 @@ from pages.LoginPage import LoginPage
 from behave import *
 
 
-@given(u'Iniciando Navegador "turnera-frontend-administracion-app-turnera-pre-qa.apps.ocp4-dev.gcba.gob.ar/login"')
+@given(u'Iniciando Navegador "https://baturnos-backoffice-preqa.gcba.gob.ar/"')
 def step_impl(context):
     try:
         LoginPage.OpenBrowser(context)

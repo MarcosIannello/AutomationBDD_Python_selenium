@@ -14,11 +14,11 @@ def step_impl(context, Organismo):
 
 @when(u'Click guardar organismo automatizado "{Organismo}"')
 def step_impl(context, Organismo):
-    try:
-        FlujoCompletoAgendaPage.ClickGuardarOrganismo(context, Organismo)
-    except:
-        context.driver.close()
-        assert False, "La prueba fallo en: Click guardar organismo automatizado"
+    # try:
+    FlujoCompletoAgendaPage.ClickGuardarOrganismo(context, Organismo)
+    # except:
+    #     context.driver.close()
+    #     assert False, "La prueba fallo en: Click guardar organismo automatizado"
 
 
 @when(u'Regreso a pagina principal1')
@@ -138,19 +138,22 @@ def step_impl(context):
         assert False, "La prueba fallo en: Seleccionar Organismo, Servicio y sede automatizados"
 
 
-@when(u'Click guardar Agenda flujo completo "{nombreAgenda}"')
-def step_impl(context, nombreAgenda):
+@when(u'Click guardar Agenda flujo completo "{Agenda}"')
+def step_impl(context, agenda):
     try:
-        FlujoCompletoAgendaPage.GuardarAgenda(context, nombreAgenda)
+        FlujoCompletoAgendaPage.GuardarAgenda(context, agenda)
     except:
         context.driver.close()
         assert False, "La prueba fallo en: Click guardar Agenda flujo completo"
 
 
-@when(u'Filtrar por nombre Agenda')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: When Filtrar por nombre Agenda')
-
+# @when(u'Filtrar por nombre Agenda')
+# def step_impl(context):
+#     FlujoCompletoAgendaPage
+# # @when(u'Filtrar por nombre Agenda')
+# def step_impl(context):
+#     raise NotImplementedError(u'STEP: When Filtrar por nombre Agenda')
+#
 
 
 

@@ -21,3 +21,18 @@ pip freeze > requirements.txt
 
 # cd /C/Users/Asinf/Desktop/AutomatizacionTurnera/RepoGitLab/turnera-backend-administracion/TestAutomation/
 
+# para instalar el allure en LINUX
+
+# 1 - wget https://github.com/allure-framework/allure2/releases/download/2.18.1/allure_2.18.1-1_all.deb
+#
+# 2 - sudo dpkg -i allure_2.18.1-1_all.deb si falla ir al paso 3
+#
+# 3 En caso de no tener instalado java instalar mediante el siguiente comando - sudo apt install openjdk-8-jre
+#
+# 4 luego volver a ejecutar sudo dpkg -i allure_2.18.1-1_all.deb y quedaria instalada
+
+
+
+
+
+

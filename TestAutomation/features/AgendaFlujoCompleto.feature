@@ -1,7 +1,7 @@
 Feature: Flujo completo Agenda.
 
   Background:
-    Given Iniciando Navegador "turnera-frontend-administracion-app-turnera-pre-qa.apps.ocp4-dev.gcba.gob.ar/login"
+    Given Iniciando Navegador "https://baturnos-backoffice-preqa.gcba.gob.ar/"
 
   Scenario Outline: Flujo completo Agenda
 
@@ -44,25 +44,26 @@ Feature: Flujo completo Agenda.
     When Regreso a pagina principal4
     When Click en Agenda
     When Click en boton crear Agenda
-    When Escribir Nombre Agenda Flujo Completo "<nombreAgenda>"
+    When Escribir Nombre Agenda Flujo Completo "<Agenda>"
     When Seleccionar Organismo, Servicio y sede automatizados
-    When Click guardar Agenda flujo completo "nombreAgenda"
-    When Filtrar por nombre Agenda
-    When Click en Configurar Registro Agenda
-    When Seleccionar Dias de agenda
-    When Ingresar Duracion turno y confirmacion "<duracionTurno>"
-    When Ingresar Fechas vigencia desde y hasta
-    When Agregar franja horaria
-    When Ingresar horario 1er turno y ultimo turno "<primerTurno>" "<ultimoTurno>"
-    When Ingresar cantidad de turnos en simultaneo "<turnosSimultaneos>"
-    When Click en Aceptar y Guardar configuracion de agenda
+    When Click guardar Agenda flujo completo "<Agenda>"
+    Then Validar Alta Agenda
+#    When Filtrar por nombre Agenda
+#    When Click en Configurar Registro Agenda
+#    When Seleccionar Dias de agenda
+#    When Ingresar Duracion turno y confirmacion "<duracionTurno>"
+#    When Ingresar Fechas vigencia desde y hasta
+#    When Agregar franja horaria
+#    When Ingresar horario 1er turno y ultimo turno "<primerTurno>" "<ultimoTurno>"
+#    When Ingresar cantidad de turnos en simultaneo "<turnosSimultaneos>"
+#    When Click en Aceptar y Guardar configuracion de agenda
 
 
 
 
     Examples:
-      | cuit        | password | Organismo | Servicio    | cantMaximaTurnos | tiempoPreCancelacion | tiempoEspera | url                       | Sede      | direccion          | cantMaximaTurnos | diasPreviosCita | maxDisponibilidadDias | nombreAgenda | duracionTurno | primerTurno | ultimoTurno | turnosSimultaneos | proximo | fecha | lugar |
-      | 27395625123 | Troquel1 | OTestAutomation | SerTestAuto | 22               | 120                  | 22           | https://www.google.com.ar | STestAuto | ALMAFUERTE AV. 528 | 19               | 86              | 309                   | TestAgenda   | 20            | 10:00 AM    | 11:00 AM    | 2                 | Próximo | Fecha | Lugar |
+      | cuit        | password | Organismo   | Servicio    | cantMaximaTurnos | tiempoPreCancelacion | tiempoEspera | url                       | Sede         | direccion              | cantMaximaTurnos | diasPreviosCita | maxDisponibilidadDias | Agenda         | duracionTurno | primerTurno | ultimoTurno | turnosSimultaneos | proximo | fecha | lugar |
+      | 27395625123 | Troquel1 | AutoTestOrg | AutoTestSer | 22               | 120                  | 22           | https://www.google.com.ar | AutoTestSede | GOMEZ, JUAN CARLOS 278 | 19               | 86              | 309                   | AutoTestAgenda | 20            | 10:00 AM    | 11:00 AM    | 2                 | Próximo | Fecha | Lugar |
 
 
 

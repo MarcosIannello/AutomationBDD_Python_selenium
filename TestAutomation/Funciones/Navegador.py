@@ -16,5 +16,5 @@ class Funciones_driver:
         warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
 
     def driver_Chrome(self):  # NAVEGADOR FIREFOX RUTA DEL DRIVE
-        self.driver = webdriver.Chrome("C:\drivers\chromedriver.exe")
+        self.driver = webdriver.Chrome("/usr/bin/Chromedriver/chromedriver")
 

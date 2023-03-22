@@ -1,7 +1,7 @@
 Feature: Baja Feriado automatizado.
 
   Background:
-    Given Iniciando Navegador "turnera-frontend-administracion-app-turnera-pre-qa.apps.ocp4-dev.gcba.gob.ar/login"
+    Given Iniciando Navegador "https://baturnos-backoffice-preqa.gcba.gob.ar/"
 
   Scenario Outline: Baja Feriado
     When Escribiendo campo CUIT "<cuit>"
